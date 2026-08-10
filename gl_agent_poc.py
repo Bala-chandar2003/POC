@@ -122,6 +122,6 @@ def sap_gl_created(event: SapEvent):
     return result
 
 
-@app.get("/")
+@app.api_route("/", methods=["GET", "HEAD"])
 def health():
     return {"status": "up", "try": "POST /sap/gl-created with {'gl_id': 'GL-1001'}"}
