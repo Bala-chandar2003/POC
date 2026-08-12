@@ -32,6 +32,9 @@ FAKE_GL_DB = {
     "GL-1002": {"gl_id": "GL-1002", "description": "Travel Expenses",
                 "company_code": "1000", "last_posting_date": "2026-07-15",
                 "amount": 45000},
+    "GL-1003": {"gl_id": "GL-1003", "description": "Procurement of Laptops",
+                    "company_code": "1003", "last_posting_date": "2026-03-12",
+                    "amount": 450000},
 }
 
 @app.get("/dummy/master-data/{gl_id}")
